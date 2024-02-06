@@ -62,3 +62,12 @@ SELECT COUNT(name)
 AS Number_of_TEACHER_WITH_CELLNULL 
 FROM `TEACHERS` 
 WHERE `phone` is NULL; 
+
+<!-- BONUS:
+Selezionare nome, descrizione e periodo di tutti i corsi che hanno sito web diverso da null, cfu compresi tra 9 e 12 e che sono del primo anno ed ordinarli in ordine decrescente -->
+
+SELECT `name`, `description`, `period` 
+FROM `courses`
+WHERE `website` is not null
+AND `year` = 1
+AND `cfu`  BETWEEN 9 AND 12 ORDER BY `cfu` DESC;
