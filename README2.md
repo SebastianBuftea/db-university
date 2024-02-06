@@ -42,3 +42,7 @@ WHERE `period` = 'I semestre'
 AND `year` = 1; 
 
 5.
+SELECT * 
+FROM `exams`
+WHERE `date` = '2020/06/20'
+AND HOUR(`hour`) >= 14;
