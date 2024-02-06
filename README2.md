@@ -56,3 +56,9 @@ WHERE `level` = 'magistrale';
 SELECT COUNT(name)
 AS Number_of_Dipartiments
 FROM `departments`;
+
+8.
+SELECT COUNT(name) 
+AS Number_of_TEACHER_WITH_CELLNULL 
+FROM `TEACHERS` 
+WHERE `phone` is NULL; 
