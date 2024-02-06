@@ -51,3 +51,8 @@ AND HOUR(`hour`) >= 14;
 SELECT * 
 FROM `degrees`
 WHERE `level` = 'magistrale';
+
+7.
+SELECT COUNT(name)
+AS Number_of_Dipartiments
+FROM `departments`;
