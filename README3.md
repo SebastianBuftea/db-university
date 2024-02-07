@@ -47,3 +47,20 @@ GROUP BY `dipartimento`;
 
 <!-- join -->
 
+1.
+SELECT `students`.`name` AS `name_strudent`
+FROM `degrees`
+JOIN `students`
+ON `degrees`.`id`= `students`.`degree_id`
+WHERE `degrees`.`name`= 'Corso di Laurea in Economia';
+
+2.
+SELECT `degrees`.`name` AS `name_courses_of_magistral`
+FROM `departments`
+JOIN `degrees`
+ON `departments`.`id`= `degrees`.`department_id`
+WHERE `departments`.`name`= 'Dipartimento di Neuroscienze'
+AND `degrees`.`name` LIKE 'Corso di Laurea Magistrale%';
+
+3.
+
