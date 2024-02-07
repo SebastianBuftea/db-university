@@ -72,3 +72,10 @@ ON `course_teacher`.`teacher_id`=`teachers`.`id`
 WHERE `teachers`.`name`='Fulvio'
 AND `teachers`.`surname`='Amato';
 
+5.
+SELECT `degrees`.`name` AS `nome_corso_laurea`, `courses`.`name` as `nome_corso`, `teachers`.`name` AS `teachers_name`, `teachers`.`surname` AS `teachers_surname`
+FROM `degrees`
+JOIN `courses`ON `degrees`.`id`= `courses`.`degree_id`
+JOIN`course_teacher` ON `courses`.`id`= `course_teacher`.`course_id`
+JOIN`teachers` ON `course_teacher`.`teacher_id`=`teachers`.`id`;
+
