@@ -63,4 +63,12 @@ WHERE `departments`.`name`= 'Dipartimento di Neuroscienze'
 AND `degrees`.`name` LIKE 'Corso di Laurea Magistrale%';
 
 3.
+SELECT `courses`.`name` AS `name_corso_di_Fulvio`
+FROM `courses`
+JOIN `course_teacher`
+ON `courses`.`id`= `course_teacher`.`course_id`
+JOIN `teachers`
+ON `course_teacher`.`teacher_id`=`teachers`.`id`
+WHERE `teachers`.`name`='Fulvio'
+AND `teachers`.`surname`='Amato';
 
