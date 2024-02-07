@@ -40,3 +40,10 @@ SELECT AVG(`vote`) AS `media`, `exam_id` AS `appello`
 FROM `exam_student`
 GROUP BY `appello`;
 
+4.
+SELECT COUNT(*) AS `number`, `department_id` AS `dipartimento`
+FROM `degrees`
+GROUP BY `dipartimento`;
+
+<!-- join -->
+
