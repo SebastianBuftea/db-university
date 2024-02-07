@@ -34,3 +34,9 @@ ORDER BY `year`;
 SELECT COUNT(*) AS `numero_insegnanti`, `office_address` AS `ufficio`
 FROM `teachers`
 GROUP BY `office_address`;
+
+3.
+SELECT AVG(`vote`) AS `media`, `exam_id` AS `appello`
+FROM `exam_student`
+GROUP BY `appello`;
+
